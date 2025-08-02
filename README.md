@@ -16,3 +16,27 @@ Business Objectives
 
 Accidents caused by large trucks remain one of the leading causes of injuries and deaths in the
 United States. The objective is to identify dangerous commercial truck drivers nationwide
+
+
+Loading Data into Hadoop File System (HDFS)
+1. Transfer your input files into Cloudera VM by utilizing the systemcopy command.
+2. Create a Hive Table for geolocation tab and load data from Geolocation file. Use the DDL
+document provided to create all tables.
+CREATE TABLE geolocation_stage
+(
+truckid string,
+driverid string,
+event string,
+latitude DOUBLE,
+longitude DOUBLE,
+city string,
+state string,
+velocity BIGINT,
+event_ind BIGINT,
+idling_ind BIGINT
+)
+ROWFORMAT DELIMITED
+FIELDS TERMINATED BY ',' STORED AS TEXTFILE
+TBLPROPERTIES ("skip.header.line.count"="1");
+
+3. Load the imported file into HIVE by utilizing “LOAD DATA INPATH”
