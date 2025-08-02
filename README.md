@@ -1,6 +1,7 @@
 # Big-Data-Analytics-for-Trucking-Risk-Assessment
 
-##Objective
+Objective
+
 By using the provided HDP tools and techniques, we will process the data to create our own
 analytics reports and create a visual presentation that will benefit decision makers.
 Big Data Hadoop Ecosystems will use truck fleet data to refine and analyse trucking movement in order
@@ -11,6 +12,7 @@ streamed back to a datacentre where students will process the data and revise tr
 increase safety
 
 
-##Business Objectives
+Business Objectives
+
 Accidents caused by large trucks remain one of the leading causes of injuries and deaths in the
 United States. The objective is to identify dangerous commercial truck drivers nationwide
